@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Genre Prediction</title>
+    <style>
+        #loading {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Music Genre Prediction</h1>
+    <form id="uploadForm" enctype="multipart/form-data">
+        <input type="file" name="file" id="fileInput" required>
+        <button type="submit">Predict</button>
+    </form>
+    <div id="loading">Loading...</div>
+    <div id="result"></div>
+
+    <script>
+        document.getElementById('uploadForm').addEventListener('submit', function (event) {
+            event.preventDefault();
+            var formData = new FormData();
+            var fileInput = document.getElementById('fileInput');
+            formData.append('file', fileInput.files[0]);
+
+            var loadingDiv = document.getElementById('loading');
+            var resultDiv = document.getElementById('result');
+            loadingDiv.style.display = 'block';
+            resultDiv.innerHTML = '';
+
+            fetch('/predict', {
+                method: 'POST',
+                body: formData
+            })
+                .then(response => response.json())
+                .then(data => {
+                    loadingDiv.style.display = 'none';
+                    resultDiv.innerHTML = 'Predicted Genre: ' + data.genre;
+                })
+                .catch(error => {
+                    loadingDiv.style.display = 'none';
+                    resultDiv.innerHTML = 'Error: ' + error.message;
+                });
+        });
+    </script>
+</body>
+
+</html>
