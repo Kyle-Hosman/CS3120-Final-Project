@@ -27,4 +27,4 @@ The web app allows users to:
 4. Run the web app with:
 `python app.py`
 5. Open http://127.0.0.1:5000 in your browser to see the app
-6. Take a look at the **Notebook.ipynb** to see how it all works!
+6. Take a look at the [**Notebook.ipynb**](https://github.com/Kyle-Hosman/CS3120-Final-Project/blob/main/Notebook.ipynb) to see how it all works!
