@@ -4,7 +4,7 @@
 This project leverages a **Random Forests** model to classify music genres. 
 
 ## Dataset
-The app utilizes the **GTZAN Dataset** from Kaggle, which includes:
+The app utilizes the [GTZAN Dataset](https://www.kaggle.com/datasets/andradaolteanu/gtzan-dataset-music-genre-classification/data) from Kaggle, which includes:
 - **10 Genres** with 100 audio files per genre (30 seconds each).
 - Features extracted into two CSV files:
   - **30-second files:** Contains mean and variance of audio features.
@@ -16,11 +16,6 @@ The web app allows users to:
 2. Automatically **extract relevant audio features** from the clip.
 3. Pass these features to the **Random Forest model** for genre prediction.
 4. Display the **predicted genre** to the user.
-
-## Key Features
-- **Fast and efficient predictions** using Random Forests.
-- Support for user-uploaded audio clips.
-- **Real-time feature extraction** for accurate predictions.
 
 # How to Use this App
 1. Create a Python Virtual Environment:
