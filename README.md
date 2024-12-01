@@ -1,5 +1,9 @@
 # Music Genre Classification Web App
 
+<div align="center">
+  <img src="screenshot.png" alt="Application Screenshot" width="400">
+</div>
+
 ## Overview
 This project leverages a **Random Forests** model to classify music genres. 
 
