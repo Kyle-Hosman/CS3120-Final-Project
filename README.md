@@ -34,6 +34,6 @@ The web app allows users to:
 6. Take a look at the [**Notebook.ipynb**](https://github.com/Kyle-Hosman/CS3120-Final-Project/blob/main/Notebook.ipynb) to see how it all works!
 
 ## Limitations
-1. The model relies on pre-extracted features, which limits how well it can understand the full complexity of audio data. The features I used may not capture the subtle differences between genres very effectively.
-2. When I tried adding new features, like rhythm or tone-based ones, these didn’t improve the model much, showing that just using features like this with Random Forest has its limits.
-3. If I had more time, using a CNN could greatly improve accuracy because it can better understand the detailed patterns in audio.
+- The model relies on pre-extracted features, which limits how well it can understand the full complexity of audio data. The features I used may not capture the subtle differences between genres very effectively.
+- When I tried adding new features, like rhythm or tone-based ones, these didn’t improve the model much, showing that just using features like this with Random Forest has its limits.
+- If I had more time, using a CNN could greatly improve accuracy because it can better understand the detailed patterns in audio.
