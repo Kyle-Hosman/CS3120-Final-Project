@@ -1,0 +1,7 @@
+#project dependencies
+pandas
+numpy
+librosa
+scikit-learn
+matplotlib
+flask

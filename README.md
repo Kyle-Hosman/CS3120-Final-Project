@@ -21,3 +21,15 @@ The web app allows users to:
 - **Fast and efficient predictions** using Random Forests.
 - Support for user-uploaded audio clips.
 - **Real-time feature extraction** for accurate predictions.
+
+# How to Use this App
+1. Create a Python Virtual Environment:
+`python -m venv .venv`
+2. Activate the Virtual Environment:
+`.venv\Scripts\activate`
+3. Install Dependencies:
+`pip install -r requirements.txt`
+4. Run the web app with:
+`python app.py`
+5. Open http://127.0.0.1:5000 in your browser to see the app
+6. Take a look at the **Notebook.ipynb** to see how it all works!
